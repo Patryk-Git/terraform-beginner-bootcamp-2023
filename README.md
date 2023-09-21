@@ -16,3 +16,18 @@ The general format:
 
 [Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
+
+[AWS CLI ENV VARS](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if AWS credentials are configure correctly by running:
+'''sh
+aws sts get-caller-identity
+'''
+
+If it sucesfull you should get json that looks like this"
+
+{
+    "UserId": "AIDA3446VZ1234525",
+    "Account": "12345678",
+    "Arn": "arn:aws:iam::12345678:user/terraform-bootcamp"
+}
