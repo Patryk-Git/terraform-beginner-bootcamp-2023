@@ -2,7 +2,6 @@
 
 ## Semntic Versioning
 
-
 [semver.org](https://semver.org/)
 
 The general format:
