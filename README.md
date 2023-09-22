@@ -31,3 +31,7 @@ If it sucesfull you should get json that looks like this"
     "Account": "12345678",
     "Arn": "arn:aws:iam::12345678:user/terraform-bootcamp"
 }
+
+## Terraform Basics
+
+## Terraform Registry
