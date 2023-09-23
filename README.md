@@ -35,3 +35,6 @@ If it sucesfull you should get json that looks like this"
 ## Terraform Basics
 
 ## Terraform Registry
+
+## Terraform S3
+[Terraform S3 bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
