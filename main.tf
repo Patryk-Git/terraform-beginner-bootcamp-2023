@@ -9,6 +9,13 @@ terraform {
       version = "5.17.0"
     }
   }
+    cloud {
+    organization = "terraform-certpatryk"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
 }
 
 
