@@ -1,40 +1,9 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semntic Versioning
+![terraform_architecture_diagram](https://github.com/PinnerSinner/terraform-beginner-bootcamp-2023/assets/108472081/3cf0e4b5-b116-4ceb-9e2b-b8d6411defa7)
 
-[semver.org](https://semver.org/)
-
-The general format:
- **MAJOR.MINOR.PATCH**, eg. '1.0.1'
-
-- **MAJOR** version when you make incompatible API changes
-- **MINOR** version when you add functionality in a backward compatible manner
-- **PATCH** version when you make backward compatible bug fixes
-
-
-## Install the Terraform CLI
-
-[Install Terraform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-
-
-[AWS CLI ENV VARS](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
-
-We can check if AWS credentials are configure correctly by running:
-'''sh
-aws sts get-caller-identity
-'''
-
-If it sucesfull you should get json that looks like this"
-
-{
-    "UserId": "AIDA3446VZ1234525",
-    "Account": "12345678",
-    "Arn": "arn:aws:iam::12345678:user/terraform-bootcamp"
-}
-
-## Terraform Basics
-
-## Terraform Registry
-
-## Terraform S3
-[Terraform S3 bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
+## Weekly Journals
+- [Week 0 Journal](journal/week0.md)
+- [Week 1 Journal](journal/week1.md)
+  
+#### [Github markdown TOC Generator](https://ecotrust-canada.github.io/markdown-toc/)
