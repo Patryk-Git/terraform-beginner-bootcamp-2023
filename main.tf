@@ -7,6 +7,7 @@ terraform {
     aws = {
       source = "hashicorp/aws"
       version = "5.17.0"
+    
     }
   }
     cloud {
@@ -18,6 +19,11 @@ terraform {
   }
 }
 
+provider "aws" {
+    region = "us-west-1"
+    access_key = var.AWS_SECRET_ACCESS_KEY
+    secret_key = var.AWS_ACCESS_KEY_ID
+}
 
 
 resource "random_string" "bucket_name" {
@@ -38,3 +44,4 @@ resource "aws_s3_bucket" "simple_s3_bucket" {
   bucket = random_string.bucket_name.result
 
 }
+
