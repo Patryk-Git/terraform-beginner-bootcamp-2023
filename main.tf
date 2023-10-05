@@ -25,6 +25,12 @@ provider "aws" {
     secret_key = var.AWS_ACCESS_KEY_ID
 }
 
+##
+# provider "aws" {
+#     region = "us-west-1"
+#     access_key = REAL_CRED
+#     secret_key = REAL_CRED
+# }
 
 resource "random_string" "bucket_name" {
   length           = 32
