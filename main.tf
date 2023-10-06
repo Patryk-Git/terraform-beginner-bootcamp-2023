@@ -1,18 +1,25 @@
-resource "random_string" "bucket_name" {
+terraform {
+  #backend "remote" {
+   # hostname = "app.terraform.io"
+    #organization = "Marcoverse"
 
-  length           = 32
-  special          = false
-  lower            = true
-  upper            = false
+   # workspaces {
+    #  name = "Terrahouse"
+   # }
+  #}
+#  cloud {
+#    organization = "Marcoverse"
+#
+#    workspaces {
+#      name = "Terrahouse"
+#    }
+#  }
+
 }
 
+module "terrahouse_aws"{
+    source = "./modules/terrahouse_aws"
+    user_uuid = var.user_uuid
+    bucket_name = var.bucket_name
 
-resource "aws_s3_bucket" "simple_s3_bucket" {
-
-  bucket = random_string.bucket_name.result
-
-   tags = {
-     UserUuid = var.user_uuid
- }
 }
-

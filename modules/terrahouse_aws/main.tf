@@ -10,11 +10,17 @@ terraform {
     
     }
   }
-    # cloud {
-    # organization = "terraform-certpatryk"
-
-    # workspaces {
-    #   name = "terra-house-1"
-    # }
-  # }
 }
+
+
+resource "aws_s3_bucket" "simple_s3_bucket" {
+
+  bucket = var.bucket_name
+
+   tags = {
+     UserUuid = var.user_uuid
+ }
+}
+
+
+
